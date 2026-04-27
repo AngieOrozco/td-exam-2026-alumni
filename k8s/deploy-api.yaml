@@ -6,14 +6,16 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: <placeholder>
+      app: api-gw
   template:
     metadata:
       labels:
-        app: <placeholder>
+        app: api-gw
     spec:
       containers:
         - name: api-gw
-          image: <placeholder>
+          image: gcr.io/$icai2025-494512/api-gw
           ports:
             - containerPort: 3000
+
+
